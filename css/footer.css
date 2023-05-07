@@ -1,0 +1,41 @@
+.footer {
+  background-color: #2D2D2D;
+  padding: 0 1vw;
+}
+
+.footer__content {
+  font-family: 'Open Sans';
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1250px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: #8e8e8e;
+  min-height: 112px;
+  align-items: center;
+}
+
+.footer__copyright {
+  margin: 0;
+  line-height: 26px;
+}
+
+.footer__link {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+
+
+/*позиционирование через определенное растояние между иконками*/
+.footer__social-links>.footer__link:not(:last-child) {
+  margin-right: 18px;
+}
+
+.footer__link:hover {
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+
+}

@@ -1,0 +1,97 @@
+.feature {
+  margin-bottom: 104px;
+}
+
+.feature__header {
+  width: 100%;
+  text-align: center;
+}
+
+.feature__line {
+  margin-bottom: 66px;
+}
+
+.feature__title {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.feature__description {
+  line-height: 28px;
+  text-align: center;
+  max-width: 536px;
+  margin: 0 auto 34px auto;   /*отцентровали параграф*/
+}
+
+.products__filter {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.products__link {
+  position: relative;
+  text-transform: uppercase;
+  left: 46px;
+  color: #000000;
+  margin-right: 56px;
+  font-size: 22px;
+  line-height: 24px;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.products__link_active {
+  color: #FF2D2D;
+  opacity: 1;
+}
+
+.products__link:hover {
+  color: #FF2D2D;
+}
+
+.feature__products {
+  display: flex;
+  align-items: сenter;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature__product {
+  flex: 1 1 24%;
+  max-width: 298px;
+  height: 292px;
+  margin-bottom: 18px;
+  object-fit: cover;  /*новое свойство заполняет по зазмеру картинки*/
+}
+
+.feature__product:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1286px) {
+  .feature__products {
+    justify-content: flex-start;
+  }
+
+  .feature__product {
+    max-width: 100%;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .products__item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .service {
+    justify-content: center;
+  }
+}

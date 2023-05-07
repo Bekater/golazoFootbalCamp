@@ -1,0 +1,85 @@
+.programcamp {
+  display: flex;
+  padding-bottom: 100px;
+  border-bottom: 3px solid #ECECEC;
+  /*нарисовалась серая полоска внизу блока*/
+  margin-bottom: 104px;
+  margin-top: 100px;
+}
+
+.programcamp__header {
+  width: 100%;
+  text-align: center;
+}
+
+.programcamp__title {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.programcamp__description {
+  line-height: 28px;
+  text-align: center;
+  max-width: 536px;
+  margin: 0 auto 34px auto;   /*отцентровали параграф*/
+}
+
+.programcamp__line {
+  margin-bottom: 66px;
+}
+
+.programcamp__advatages,
+.programcamp__inner {
+  /* width: 50%; */
+}
+
+.programcamp__inner {
+  padding-right: 105px;
+}
+
+.programcamp__inner-title {
+  line-height: 55px;
+  /*межстрочный интервал*/
+  margin-bottom: 50px;
+}
+
+.programcamp__inner-description {
+  line-height: 28px;
+  margin-bottom: 64px;
+}
+
+
+.programcamp__advatages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 52px 4%;
+  /*выравниваем по сетке*/
+}
+
+.programcamp__advatages-item {
+  width: 48%;
+}
+
+.item__icon {
+  margin-bottom: 32px;
+}
+
+.item__title {
+  margin-bottom: 13px;
+  font-size: 24px;
+}
+
+.item__description {
+  line-height: 28px;
+}
+
+/*Resp[onsive*/
+
+@media screen and (max-width: 908px) {
+
+  .programcamp__inner,
+  .programcamp__advatages {
+    width: 100%;
+    max-width: 100%;
+  }
+}
